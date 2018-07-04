@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author                  = { "Peter Zignego" => "peter@launchsoft.co" }
   s.source                  = { :git => "https://github.com/SlackKit/SKWebAPI.git", :tag => s.version.to_s }
   s.social_media_url        = 'https://twitter.com/pvzig'
-  s.swift_version           = '4.0'
+  s.swift_version           = '4.2'
   s.ios.deployment_target   = '9.0'
   s.osx.deployment_target   = '10.11'
   s.tvos.deployment_target  = '9.0'

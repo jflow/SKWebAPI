@@ -1095,6 +1095,16 @@ extension WebAPI {
             failure?(error)
         }
     }
+    
+    public func setUserProfile(profile: String, success: SuccessClosure?, failure: FailureClosure?)
+    {
+        let parameters: [String: Any] = ["token": token, "profile": profile]
+        networkInterface.request(.usersProfileSet, parameters: parameters, successClosure: { _ in
+            success?(true)
+        }) {(error) in
+            failure?(error)
+        }
+    }
 }
 
 // MARK: - Conversations
